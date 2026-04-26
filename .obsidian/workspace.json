@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "6e44097a30f12c83",
+    "type": "split",
+    "children": [
+      {
+        "id": "a117ca9bf2245563",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d658e9b152d35071",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed84c4c07c31d486",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3ee0de076f2e7d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea7afa26f278491d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6c2236ef93344d5a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a6ea2b3dfc3ea41c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7373d69311d55852",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb77d670a5d37345",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d456f6a74dde113f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "260fd56606a2e190",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "061abdb145302ded",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7230be505c708a1c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c75e639a511b776a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ea7afa26f278491d",
+  "lastOpenFiles": [
+    "opencode/skills/pdf-processing/scripts/pdf_processing.py",
+    "opencode/skills/template/SKILL.md",
+    "opencode/skills/template/scripts",
+    "opencode/skills/template",
+    "opencode/skills/pdf-processing_1/scripts",
+    "opencode/skills/pdf-processing_1/SKILL.md",
+    "opencode/skills/pdf-processing_1",
+    "opencode/skills/pdf-processing/scripts",
+    "opencode/skills/scripts",
+    "opencode/skills/pdf-processing/SKILL.md",
+    "opencode/skills/pdf-processing",
+    "test/pdf-reader/README.md",
+    "test/pdf-reader/bibliography/example_OLD.py",
+    "test/pdf-reader/bibliography/demnet_paper.pdf",
+    "test/pdf-reader/bibliography/Yu_2024_.pdf",
+    "test/ADNI_dataset_gali/hpc_test/tests/helpers/assertions/README.md",
+    "test/ADNI_dataset_gali/hpc_test/tests/helpers/assertions/CHANGELOG.md",
+    "test/ADNI_dataset_gali/hpc_test/docs/contributing/versioning.md",
+    "test/ADNI_dataset_gali/hpc_test/docs/contributing/setup.md",
+    "test/ADNI_dataset_gali/hpc_test/docs/contributing/layout.md",
+    "test/ADNI_dataset_gali/hpc_test/docs/contributing/index.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_20_15_conservative_fine_tune_v12/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_47_crossentropy_label_smoothing_baseline_v14/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_41_enhanced_v10_conservative_label_smoothing_v13/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_38_focal_gamma_variation_v12/summary_END.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_34_focal_gamma_variation_v12/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_20_focal_loss_label_smoothing_strong_aug_v11/summary_END.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_15_focal_loss_label_smoothing_strong_aug_v11/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_19_13_focal_loss_augmentation_early_stop_v10/summary_END.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_16_00_focal_loss_augmentation_early_stop_v10/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_16_00_extreme_regularization_v10/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_16_00_class_weighted_augmentation_v7/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_15_15_early_stopping_weighted_loss_v6/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_15_15_early_stopping_weighted_loss_v6/summary_END.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_14_50_reduced_channels_v9c/summary_START.md",
+    "test/ADNI_dataset_gali/experiments/results/2026_04_24_14_42_gelu_activation_v9b/summary_START.md"
+  ]
+}
