@@ -1,2 +1,10 @@
+# Folders
 test/
 .venv/
+agents/**/test/
+agents/**/tests/
+skills/**/test/
+skills/**/tests/
+
+# Files
+*.pyc
