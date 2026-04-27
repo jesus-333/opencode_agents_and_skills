@@ -9,9 +9,11 @@ Alberto (Jesus) Zancanaro
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Imports
 
-import os
-import matplotlib.pyplot as plt
+import csv
+import json
 import numpy as np
+import pandas as pd
+import os
 import PIL.Image as Image
 import pdfplumber
 
@@ -105,7 +107,7 @@ def check_page_range(start_page : int, end_page : int, pdf) -> tuple :
     return start_page, end_page
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Exttact text from PDF documents
+# Extract text from PDF documents
 
 def extract_text_from_pdf(pdf_path : str, start_page : int = None, end_page : int = None) -> str :
     """
@@ -145,6 +147,26 @@ def extract_text_from_pdf(pdf_path : str, start_page : int = None, end_page : in
 
         return text.strip()
 
+def save_extracted_text_to_file(text : str, file_path : str) -> None :
+    """
+    Save the extracted text to a specified file.
+
+    Parameters
+    ----------
+    text : str
+        The text to be saved.
+    file_path : str
+        The path to the file where the text will be saved. If the file already exists, it will be overwritten.
+    """
+    
+    # Check if the directory of the file_path exists, if not create it
+    directory = os.path.dirname(file_path)
+    if directory and not os.path.exists(directory) : os.makedirs(directory)
+    
+    # Save the text to the file
+    with open(file_path, 'w', encoding = 'utf-8') as f :
+        f.write(text)
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Tables
 
@@ -181,6 +203,46 @@ def extract_tables_from_pdf(pdf_path : str, start_page : int = None, end_page : 
             tables.extend(page.extract_tables())
 
         return tables
+
+def save_extracted_tables(tables : list, file_path : str, extension : str = 'csv') -> None :
+    """
+    Save the extracted tables to a specified file in the desired format.
+
+    Parameters
+    ----------
+    tables : list
+        A list of tables to be saved, as obtained from the extract_tables_from_pdf function. Each table is represented as a list of rows, where each row is a list of cell values.
+    file_path : str
+        The path to the file where the tables will be saved. If the file already exists, it will be overwritten.
+    extension : str, optional
+        The file extension to use when saving the tables (default is 'csv'). Supported extensions are `csv`, `xlsx` and `json`.
+    """
+
+    # Check if the directory of the file_path exists, if not create it
+    directory = os.path.dirname(file_path)
+    if directory and not os.path.exists(directory) : os.makedirs(directory)
+
+    # Check extension
+    supported_extensions = ['csv', 'xlsx', 'json']
+    if extension.lower() not in supported_extensions : raise ValueError(f"Unsupported file extension: {extension}. Supported extensions are: {supported_extensions}")
+
+    # Save tables
+    if extension.lower() == 'csv' :
+        with open(file_path, 'w', newline = '', encoding = 'utf-8') as f :
+            writer = csv.writer(f)
+            for table in tables :
+                writer.writerows(table)
+                writer.writerow([])  # Add an empty row between tables
+
+    elif extension.lower() == 'xlsx' :
+        with pd.ExcelWriter(file_path) as writer :
+            for i, table in enumerate(tables) :
+                df = pd.DataFrame(table)
+                df.to_excel(writer, sheet_name = f'Table_{i + 1}', index = False)
+
+    elif extension.lower() == 'json' :
+        with open(file_path, 'w', encoding = 'utf-8') as f :
+            json.dump(tables, f, ensure_ascii = False, indent = 4)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Images
