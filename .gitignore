@@ -1,3 +1,12 @@
+# Automatically inserted by Opencode
+node_modules
+package.json
+package-lock.json
+bun.lock
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Custom entries
+
 # Folders
 test/
 .venv/
