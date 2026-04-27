@@ -17,7 +17,12 @@ The square indicates where text should be inserted. The text inside the square b
 
 # File summary
 
-[Summary of the analyzed file. In this section, you can be more detailed, but keep your style precise and simple. Avoid being too verbose.]
+[Summary of the analyzed file. ]
+
+"""
+In this section, you can be more detailed, but keep your style precise and simple. Avoid being too verbose. 
+You can insert images if you think they can improve the quality of the summary.
+"""
 
 ## Key points
 "Add this section if you are analyzing scientific of technical work. Ideally you should include the main points that summarize the work explained in the original file. You can enter as many points as you want but try to keep their number low (<5)"
@@ -41,6 +46,7 @@ The square indicates where text should be inserted. The text inside the square b
 
 """
 If you're asked to insert information that doesn't fit into the categories above, please enter it here. Feel free to change the section title or add subsection if you feel it's appropriate.
+You can insert images if you think they can improve the quality of the summary.
 """
 
 [Any text you need to enter]

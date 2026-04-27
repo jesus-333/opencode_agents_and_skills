@@ -45,7 +45,8 @@ This are optional informations, e.g. number of figures, pages size etc.
 Extract this information only if it is useful to the current task
 
 ## File summary
-By default produce a summary of the file(s) analyzed. See the [next section](#save-information) for more information on how these summary files should be structured.
+By default produce a summary of the file(s) analyzed. 
+YOU MUST USE the template file provided ([single file](./template_summary_single_file.md), [multiple files](./template_summary_multiple_files.md)), unless otherwise specified.
 To produce the summary, preferably extract the text using the tools at your disposal, save it to files and work with those files.
 If specifically requested by the user, and you have the capabilities, you can directly analyze the entire `pdf` file yourself and summarize it.
 Don't produce a summary file if the user asks for something more specific (e.g., extract only images).
@@ -66,8 +67,11 @@ You can use a different folder name and structure if you receive specific instru
 
 ### Notes on files to produce during the analysis
 - By default, save images as `png`. Change the extension only if specifically requested.
+    - If you analyze more than 1 file create a subfolder for each `pdf` analyzed and insert the extracted images into the corresponding subfolder.
 - By default, save tables as `csv`. Change the extension only if specifically requested.
+    - If you analyze more than 1 file create a subfolder for each `pdf` analyzed and insert the extracted tables into the corresponding subfolder.
 - By default, save text as `txt`. Change the extension only if specifically requested.
+    - If you analyze more than 1 file create a text file for each `pdf` analyzed.
 - `list_of_images.csv` is a `csv` file with a summary of all the images found. For each image you must save :
     - The path to the file containing the extracted image.
     - The dimensions of the extracted image must be saved.
