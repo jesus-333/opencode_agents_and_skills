@@ -3,7 +3,6 @@ The text between quotation mark (both block or in a single line) are suggestions
 The square indicates where text should be inserted. The text inside the square brackets indicates what text should be inserted.
 """
 
-
 # Summary [NAME ORIGINAL FILE]
 
 [Very brief description of the files. Maximum 2 or 3 sentences]. 

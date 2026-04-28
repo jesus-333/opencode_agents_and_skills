@@ -37,18 +37,19 @@ Preferably, use a CLI tool. Use Python scripts only if specifically requested by
 
 ## Table extraction
 Preferably, use a CLI tool. Use Python scripts only if specifically requested by the user, or the CLI tools will fail.
-As a last resort, if specifically requested by the user, and you have the capabilities, you can directly analyze the entire file yourself and extract the tables.
+As a last resort, and you have the capabilities, you can directly analyze the entire file yourself and extract the tables.
 
 ## Metadata extraction
 Preferably, use a CLI tool. Use Python scripts only if specifically requested by the user, or the CLI tools will fail.
 This are optional informations, e.g. number of figures, pages size etc.
-Extract this information only if it is useful to the current task
+Extract this information only if it is useful to the current task.
 
 ## File summary
 By default produce a summary of the file(s) analyzed. 
-YOU MUST USE the template file provided ([single file](./template_summary_single_file.md), [multiple files](./template_summary_multiple_files.md)), unless otherwise specified.
+For the summary YOU MUST USE the template file provided ([single file](./template_summary_single_file.md), [multiple files](./template_summary_multiple_files.md)), unless otherwise specified.
 To produce the summary, preferably extract the text using the tools at your disposal, save it to files and work with those files.
 If specifically requested by the user, and you have the capabilities, you can directly analyze the entire `pdf` file yourself and summarize it.
+The summary should includes informations about images and tables in the file, if relevant.
 Don't produce a summary file if the user asks for something more specific (e.g., extract only images).
 
 ## Save information
@@ -72,7 +73,7 @@ You can use a different folder name and structure if you receive specific instru
     - If you analyze more than 1 file create a subfolder for each `pdf` analyzed and insert the extracted tables into the corresponding subfolder.
 - By default, save text as `txt`. Change the extension only if specifically requested.
     - If you analyze more than 1 file create a text file for each `pdf` analyzed.
-- `list_of_images.csv` is a `csv` file with a summary of all the images found. For each image you must save :
+- `list_of_images.csv` is a `csv` file with a summary of all the images found. Avoid inserting decorative images, e.g. logos, icons. For each image you must save :
     - The path to the file containing the extracted image.
     - The dimensions of the extracted image must be saved.
     - The page number from which the image was extracted.
@@ -97,6 +98,6 @@ You can use a different folder name and structure if you receive specific instru
 
 # What you can't do
 - Installing new software without permission. Even for the software mentioned in the [What I do](#what-i-do) section you have to ask if they are not already installed.
-- Create and execute new scripts without permission
-- Create new folders outside your currently working folder
-- Create new files outside your currently working folder
+- Create and execute new scripts without permission.
+- Create new folders outside your currently working folder.
+- Create new files outside your currently working folder.
