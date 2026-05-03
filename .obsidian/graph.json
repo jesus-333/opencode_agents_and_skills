@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -13,6 +13,20 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "file:SKILL",
+      "color": {
+        "a": 1,
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "file:template",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
   "collapse-display": true,
@@ -20,11 +34,11 @@
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.3426301612642536,
+  "linkDistance": 500,
+  "scale": 0.021747284154117752,
   "close": false
 }
